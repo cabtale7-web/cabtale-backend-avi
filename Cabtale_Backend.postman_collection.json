@@ -1,0 +1,3619 @@
+{
+    "info": {
+        "name": "Cabtale Backend API",
+        "_postman_id": "f0d6f3f6-7d0c-4f5a-b3a8-cabtale-backend-api",
+        "description": "Auto-generated from Laravel route files on 2026-02-28.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "App",
+            "item": [
+                {
+                    "name": "GET /api/user",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/user",
+                        "description": "Module: App"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "AuthManagement",
+            "item": [
+                {
+                    "name": "POST /api/customer/auth/external-login",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/external-login",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/external-registration",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/external-registration",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/forget-password",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/forget-password",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/login",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/login",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/otp-login",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/otp-login",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/otp-verification",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/otp-verification",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/registration",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/registration",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/reset-password",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/reset-password",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/send-otp",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/send-otp",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/auth/social-login",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/auth/social-login",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/auth/forget-password",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/auth/forget-password",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/auth/login",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/auth/login",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/auth/otp-verification",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/auth/otp-verification",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/auth/registration",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/auth/registration",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/auth/reset-password",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/auth/reset-password",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/auth/send-otp",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/auth/send-otp",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/user/change-password",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/user/change-password",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/user/delete",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/user/delete",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/user/logout",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/user/logout",
+                        "description": "Module: AuthManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "BusinessManagement",
+            "item": [
+                {
+                    "name": "GET /api/configurations",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/configurations",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/cancellation-reason-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/cancellation-reason-list",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/distance-api",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/distance-api",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/geocode-api",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/geocode-api",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/get-payment-methods",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/get-payment-methods",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/config/get-routes",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/config/get-routes",
+                        "description": "Module: BusinessManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/get-zone-id",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/get-zone-id",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/parcel-cancellation-reason-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/parcel-cancellation-reason-list",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/place-api-autocomplete",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/place-api-autocomplete",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/config/place-api-details",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/config/place-api-details",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/configuration",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/configuration",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/pages/{page_name}",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/pages/{page_name}",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/cancellation-reason-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/cancellation-reason-list",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/distance-api",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/distance-api",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/geocode-api",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/geocode-api",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/get-zone-id",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/get-zone-id",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/parcel-cancellation-reason-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/parcel-cancellation-reason-list",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/place-api-autocomplete",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/place-api-autocomplete",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/config/place-api-details",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/config/place-api-details",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/configuration",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/driver/configuration",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/get-routes",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/get-routes",
+                        "description": "Module: BusinessManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/get-external-configurations",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/get-external-configurations",
+                        "description": "Module: BusinessManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/location/save",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/location/save",
+                        "description": "Module: BusinessManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/store-configurations",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/store-configurations",
+                        "description": "Module: BusinessManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "ChattingManagement",
+            "item": [
+                {
+                    "name": "GET /api/customer/chat/channel-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/chat/channel-list",
+                        "description": "Module: ChattingManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/chat/conversation",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/chat/conversation",
+                        "description": "Module: ChattingManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/chat/create-channel",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/chat/create-channel",
+                        "description": "Module: ChattingManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/chat/find-channel",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/chat/find-channel",
+                        "description": "Module: ChattingManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/chat/send-message",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/chat/send-message",
+                        "description": "Module: ChattingManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/chat/channel-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/chat/channel-list",
+                        "description": "Module: ChattingManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/chat/conversation",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/chat/conversation",
+                        "description": "Module: ChattingManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/chat/create-channel",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/chat/create-channel",
+                        "description": "Module: ChattingManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/chat/find-channel",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/chat/find-channel",
+                        "description": "Module: ChattingManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/chat/send-message",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/chat/send-message",
+                        "description": "Module: ChattingManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Gateways",
+            "item": [
+                {
+                    "name": "GET /api/Gateways",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/Gateways",
+                        "description": "Module: Gateways"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/v1/payment-config",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/v1/payment-config",
+                        "description": "Module: Gateways"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "ParcelManagement",
+            "item": [
+                {
+                    "name": "GET /api/customer/parcel/category",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/category",
+                        "description": "Module: ParcelManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/parcel/create",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/create",
+                        "description": "Module: ParcelManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/parcel/details/{ride_request_id}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/details/{ride_request_id}",
+                        "description": "Module: ParcelManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/parcel/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/list",
+                        "description": "Module: ParcelManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/parcel/suggested-vehicle-category",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/suggested-vehicle-category",
+                        "description": "Module: ParcelManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/parcel/track-driver",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/track-driver",
+                        "description": "Module: ParcelManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/parcel/vehicle",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/parcel/vehicle",
+                        "description": "Module: ParcelManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/parcel/update-status",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/parcel/update-status",
+                        "description": "Module: ParcelManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "PromotionManagement",
+            "item": [
+                {
+                    "name": "GET /api/customer/banner/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/banner/list",
+                        "description": "Module: PromotionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/banner/update-redirection-count",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/banner/update-redirection-count",
+                        "description": "Module: PromotionManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/coupon/apply",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/coupon/apply",
+                        "description": "Module: PromotionManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/coupon/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/coupon/list",
+                        "description": "Module: PromotionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/discount/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/discount/list",
+                        "description": "Module: PromotionManagement"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "ReviewModule",
+            "item": [
+                {
+                    "name": "PUT /api/customer/review/check-submission",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/review/check-submission",
+                        "description": "Module: ReviewModule",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/review/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/review/list",
+                        "description": "Module: ReviewModule"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/review/store",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/review/store",
+                        "description": "Module: ReviewModule",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/review/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/review/list",
+                        "description": "Module: ReviewModule"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/review/save/{id}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/review/save/{id}",
+                        "description": "Module: ReviewModule",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/review/store",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/review/store",
+                        "description": "Module: ReviewModule",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "TransactionManagement",
+            "item": [
+                {
+                    "name": "GET /api/customer/transaction/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/transaction/list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/transaction/referral-earning-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/transaction/referral-earning-list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/transaction/cash-collect-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/transaction/cash-collect-list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/transaction/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/transaction/list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/transaction/payable-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/transaction/payable-list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/transaction/referral-earning-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/transaction/referral-earning-list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/transaction/wallet-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/transaction/wallet-list",
+                        "description": "Module: TransactionManagement"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "TripManagement",
+            "item": [
+                {
+                    "name": "GET /api/customer/drivers-near-me",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/drivers-near-me",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/apply-coupon",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/apply-coupon",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/arrival-time",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/arrival-time",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/bidding-list/{trip_request_id}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/bidding-list/{trip_request_id}",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/cancel-coupon",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/cancel-coupon",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/coordinate-arrival",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/coordinate-arrival",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/ride/create",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/create",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/details/{trip_request_id}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/details/{trip_request_id}",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/digital-payment",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/customer/ride/digital-payment",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/final-fare",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/final-fare",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/ride/get-estimated-fare",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/get-estimated-fare",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/ignore-bidding",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/ignore-bidding",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/ongoing-parcel-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/ongoing-parcel-list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/payment",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/payment",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/received-returning-parcel/{trip_request_id}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/received-returning-parcel/{trip_request_id}",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/ride-resume-status",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/ride-resume-status",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/ride/track-location",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/track-location",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/ride/trip-action",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/trip-action",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/ride/unpaid-parcel-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/unpaid-parcel-list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/ride/update-status/{trip_request_id}",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/ride/update-status/{trip_request_id}",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/last-ride-details",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/last-ride-details",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/pending-ride-list-test",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/pending-ride-list-test",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/ride/arrival-time",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/arrival-time",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/ride/bid",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/bid",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/ride/coordinate-arrival",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/coordinate-arrival",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/details/{ride_request_id}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/details/{ride_request_id}",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/final-fare",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/final-fare",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/ride/ignore-trip-notification",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/ignore-trip-notification",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/ride/match-otp",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/match-otp",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/ongoing-parcel-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/ongoing-parcel-list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/overview",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/overview",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/payment",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/payment",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/pending-ride-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/pending-ride-list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/ride/resend-otp",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/resend-otp",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/ride/returned-parcel",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/returned-parcel",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/ride-resume-status",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/ride-resume-status",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/ride/ride-waiting",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/ride-waiting",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/ride/track-location",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/track-location",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/ride/trip-action",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/trip-action",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/ride/unpaid-parcel-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/unpaid-parcel-list",
+                        "description": "Module: TripManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/ride/update-status",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/ride/update-status",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/ride/store-screenshot",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/ride/store-screenshot",
+                        "description": "Module: TripManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "UserManagement",
+            "item": [
+                {
+                    "name": "POST /api/customer/address/add",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/address/add",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/address/all-address",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/address/all-address",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE /api/customer/address/delete",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/address/delete",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/address/edit/{id}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/address/edit/{id}",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/address/update",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/address/update",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/applied-coupon",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/applied-coupon",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/change-language",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/change-language",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/external-update-data",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/external-update-data",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/get-data",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/get-data",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/info",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/info",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/level",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/level",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/loyalty-points/convert",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/loyalty-points/convert",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/loyalty-points/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/loyalty-points/list",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/notification-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/notification-list",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/customer/referral-details",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/referral-details",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/update/fcm-token",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/update/fcm-token",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/customer/update/profile",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/update/profile",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/wallet/transfer-drivemond-from-mart",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/wallet/transfer-drivemond-from-mart",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/customer/wallet/transfer-drivemond-to-mart",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/wallet/transfer-drivemond-to-mart",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/activity/daily-income",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/activity/daily-income",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/activity/leaderboard",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/activity/leaderboard",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/change-language",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/change-language",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/income-statement",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/income-statement",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/info",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/info",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/level",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/level",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/loyalty-points/convert",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/loyalty-points/convert",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/loyalty-points/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/loyalty-points/list",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/my-activity",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/my-activity",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/notification-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/notification-list",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/referral-details",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/referral-details",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/time-tracking",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/time-tracking",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/update-online-status",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/update-online-status",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/update/fcm-token",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/update/fcm-token",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT /api/driver/update/profile",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/update/profile",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/withdraw-method-info/create",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw-method-info/create",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/withdraw-method-info/delete/{id}",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw-method-info/delete/{id}",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/withdraw-method-info/edit/{id}",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw-method-info/edit/{id}",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/withdraw-method-info/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw-method-info/list",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/withdraw-method-info/update/{id}",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw-method-info/update/{id}",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/withdraw/methods",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw/methods",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/withdraw/pending-request",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw/pending-request",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/withdraw/request",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw/request",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/withdraw/settled-request",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/withdraw/settled-request",
+                        "description": "Module: UserManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/user/get-live-location",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/user/get-live-location",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/user/store-live-location",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/user/store-live-location",
+                        "description": "Module: UserManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "VehicleManagement",
+            "item": [
+                {
+                    "name": "GET /api/customer/vehicle/category",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/customer/vehicle/category",
+                        "description": "Module: VehicleManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/vehicle/brand/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/vehicle/brand/list",
+                        "description": "Module: VehicleManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/vehicle/category/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/vehicle/category/list",
+                        "description": "Module: VehicleManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET /api/driver/vehicle/model/list",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/vehicle/model/list",
+                        "description": "Module: VehicleManagement"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/vehicle/store",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/vehicle/store",
+                        "description": "Module: VehicleManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST /api/driver/vehicle/update/{id}",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{auth_token}}"
+                            }
+                        ],
+                        "url": "{{base_url}}/api/driver/vehicle/update/{id}",
+                        "description": "Module: VehicleManagement",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "ZoneManagement",
+            "item": [
+                {
+                    "name": "GET /api/zonemanagement",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{base_url}}/api/zonemanagement",
+                        "description": "Module: ZoneManagement"
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://backend.cabtale.com",
+            "type": "string"
+        },
+        {
+            "key": "auth_token",
+            "value": "",
+            "type": "string"
+        }
+    ]
+}

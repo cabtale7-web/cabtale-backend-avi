@@ -1,0 +1,16 @@
+.git
+.gitattributes
+.gitignore
+.env
+.env.*
+node_modules/
+vendor/
+tests/
+cloud_sql_proxy
+cloud_sql_proxy.exe
+composer.phar
+composer-setup.php
+DockerFile
+npm-debug.log
+yarn-debug.log
+yarn-error.log

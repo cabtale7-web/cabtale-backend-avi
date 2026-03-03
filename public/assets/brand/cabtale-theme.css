@@ -1,0 +1,130 @@
+/* CabTale shared theme overrides for admin + landing pages.
+   Uses the Flutter light/dark palette provided by product. */
+
+:root {
+  --text-primary: #384b70;
+  --text-secondary: #d6e2ff;
+  --input-border-color: #e0e3eb;
+  --input-border-color-active: #506490;
+  --input-bg: #f8f9fc;
+  --disable-input-bg: #eceff6;
+  --title-color: #1f2a44;
+  --title-color-rgb: 31, 42, 68;
+  --bs-body-color: #3b4461;
+  --secondary-body-color: #8c8fa1;
+  --absolute-dark: #1f2a44;
+  --absolute-white: #ffffff;
+  --shadow-color: rgba(203, 211, 224, 0.5);
+  --bs-body-bg-rgb: 243, 245, 250;
+  --bs-body-bg: #f3f5fa;
+  --bs-border-rgb: 224, 227, 235;
+  --bs-border-color: #e0e3eb;
+  --bs-light-rgb: 248, 249, 252;
+  --bs-light: #f8f9fc;
+  --bs-danger-rgb: 255, 92, 92;
+  --bs-danger: #ff5c5c;
+  --bs-success-rgb: 48, 184, 119;
+  --bs-success: #30b877;
+  --bs-info-rgb: 108, 140, 213;
+  --bs-info: #6c8cd5;
+  --bs-warning-rgb: 244, 161, 100;
+  --bs-warning: #f4a164;
+  --bs-dark-rgb: 44, 58, 89;
+  --bs-dark: #2c3a59;
+  --bs-primary-rgb: 56, 75, 112;
+  --bs-primary: #384b70;
+  --bs-secondary-rgb: 214, 226, 255;
+  --bs-secondary: #d6e2ff;
+
+  /* Landing variables */
+  --base-rgb: 56, 75, 112;
+  --base-title: #384b70;
+  --base-white: #384b70;
+  --body-clr: #3b4461;
+  --light-clr: #e1e9ff;
+  --body-bg: #f3f5fa;
+  --body-bg-rgb: 243, 245, 250;
+  --section-bg: #f8f9fc;
+  --section-bg-2: #eceff6;
+  --section-light: #e8ecf5;
+  --dark-clr: #2c3a59;
+  --dark-rgb: 44, 58, 89;
+  --white-clr: #ffffff;
+  --white-rgb: 255, 255, 255;
+  --footer: #2c3a59;
+  --footer-bottom: #1f2a44;
+  --primary-clr: #6c8cd5;
+  --primary-rgb: 108, 140, 213;
+  --border-clr: #e0e3eb;
+  --border-light: #e0e3eb;
+  --border-light-only: #e0e3eb;
+  --border-dark: #6e7fa8;
+  --border-dark-only: transparent;
+  --header-bg: rgba(248, 249, 252, 0.95);
+}
+
+body[theme="dark"],
+.dark-theme {
+  --bs-body-color: #bac2d8;
+  --bs-white: #1e2230;
+  --bs-white-rgb: 30, 34, 48;
+  --input-bg: #202533;
+  --disable-input-bg: #28314a;
+  --input-border-color-active: #4b5f8a;
+  --title-color: #eaeaea;
+  --absolute-white: #eaeaea;
+  --secondary-body-color: #9fa8c3;
+  --title-color-rgb: 234, 234, 234;
+  --bs-body-bg-rgb: 18, 18, 18;
+  --bs-body-bg: #121212;
+  --bs-border-rgb: 50, 65, 106;
+  --bs-border-color: #32416a;
+  --shadow-color: rgba(14, 16, 24, 0.45);
+  --dropdown-box-shadow: rgba(14, 16, 24, 0.35) 0 0 4px 0,
+    rgba(14, 16, 24, 0.35) -8px 8px 28px -4px;
+
+  /* Landing dark variables */
+  --text-primary: #384b70;
+  --text-secondary: #28314a;
+  --base-rgb: 56, 75, 112;
+  --base-title: #dce1f0;
+  --base-white: #dce1f0;
+  --body-clr: #bac2d8;
+  --light-clr: #32416a;
+  --body-bg: #121212;
+  --body-bg-rgb: 18, 18, 18;
+  --section-bg: #181b24;
+  --section-bg-2: #1e2230;
+  --section-light: #202533;
+  --dark-clr: #0e1018;
+  --dark-rgb: 14, 16, 24;
+  --white-clr: #eaeaea;
+  --white-rgb: 234, 234, 234;
+  --footer: #181b24;
+  --footer-bottom: #121212;
+  --primary-clr: #6c8cd5;
+  --primary-rgb: 108, 140, 213;
+  --border-clr: #32416a;
+  --border-light: #32416a;
+  --border-light-only: #32416a;
+  --border-dark: #4b5f8a;
+  --border-dark-only: #32416a;
+  --header-bg: rgba(24, 27, 36, 0.95);
+}
+
+/* Brand logo consistency */
+.logo img,
+.main-logo,
+.login-logo {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.main-logo {
+  max-height: 44px;
+}
+
+.login-logo {
+  max-height: 76px;
+}
