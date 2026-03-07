@@ -31,11 +31,13 @@ class AddressController extends Controller
                 'query' => 'user_id',
                 'value' => $user_id
             ];
-
-            $addresses = $this->address->get(limit:$request['limit'], offset:$request['offset'], dynamic_page:true, attributes:$attributes);
+            // Prevent type errors when client does not send pagination params.
+            $limit = max((int)$request->input('limit', 10), 1);
+            $offset = max((int)$request->input('offset', 1), 1);
+            $addresses = $this->address->get(limit: $limit, offset: $offset, dynamic_page: true, attributes: $attributes);
             $data = AddressResource::collection($addresses);
 
-            return response()->json(responseFormatter(constant:DEFAULT_200, content:$data, limit:$request['limit'], offset:$request['offset']), 200);
+            return response()->json(responseFormatter(constant: DEFAULT_200, content: $data, limit: $limit, offset: $offset), 200);
         }
         return response()->json(responseFormatter(DEFAULT_403), 401);
     }
