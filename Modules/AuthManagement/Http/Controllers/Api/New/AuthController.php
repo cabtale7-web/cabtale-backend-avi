@@ -622,9 +622,11 @@ class AuthController extends Controller
         }
         try {
             $customer = $this->customerService->create($request->all());
+            $customerData = $customer?->toArray() ?? [];
+            unset($customerData['password']);
             $data = [
                 'status' => true,
-                'data' => $customer
+                'data' => $customerData
             ];
             return response()->json(data: $data);
         } catch (\Exception $exception) {

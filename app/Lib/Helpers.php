@@ -570,6 +570,14 @@ if (!function_exists('onErrorImage')) {
     function onErrorImage($data, $src, $error_src, $path)
     {
         if (isset($data) && strlen($data) > 1 && Storage::disk('public')->exists($path . $data)) {
+            try {
+                $version = Storage::disk('public')->lastModified($path . $data);
+                if ($version) {
+                    $separator = strpos($src, '?') !== false ? '&' : '?';
+                    return $src . $separator . 'v=' . $version;
+                }
+            } catch (\Throwable $exception) {
+            }
             return $src;
         }
         return $error_src;
@@ -847,7 +855,6 @@ if (!function_exists('hexToRgb')) {
         return "$r, $g, $b";
     }
 }
-
 
 
 
