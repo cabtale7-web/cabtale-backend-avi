@@ -571,14 +571,16 @@ if (!function_exists('onErrorImage')) {
     {
         if (isset($data) && strlen($data) > 1 && Storage::disk('public')->exists($path . $data)) {
             try {
+                $publicUrl = Storage::disk('public')->url($path . $data);
                 $version = Storage::disk('public')->lastModified($path . $data);
                 if ($version) {
-                    $separator = strpos($src, '?') !== false ? '&' : '?';
-                    return $src . $separator . 'v=' . $version;
+                    $separator = strpos($publicUrl, '?') !== false ? '&' : '?';
+                    return $publicUrl . $separator . 'v=' . $version;
                 }
+                return $publicUrl;
             } catch (\Throwable $exception) {
             }
-            return $src;
+            return Storage::disk('public')->url($path . $data);
         }
         return $error_src;
     }
@@ -855,6 +857,5 @@ if (!function_exists('hexToRgb')) {
         return "$r, $g, $b";
     }
 }
-
 
 
