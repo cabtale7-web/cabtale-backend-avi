@@ -540,7 +540,10 @@ class TripRequestController extends Controller
             $final = $this->trip->getBy(column: 'id', value: $tripDiscount->id, attributes: ['relations' => 'driver.lastLocations', 'time', 'coordinate', 'fee']);
         }
 
-        $search_radius = (double)get_cache('search_radius') ?? 5;
+        $search_radius = (double)(get_cache('search_radius') ?? 5);
+        if ($search_radius <= 0) {
+            $search_radius = 5;
+        }
         // Find drivers list based on pickup locations
         $find_drivers = $this->findNearestDriver(
             latitude: $pickup_coordinates[0] ?? $final->coordinate->pickup_coordinates->latitude,

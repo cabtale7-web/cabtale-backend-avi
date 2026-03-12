@@ -826,7 +826,10 @@ class TripRequestService extends BaseService implements TripRequestServiceInterf
     {
         $save_trip = $this->storeTrip(attributes: $request->request->all());
 
-        $search_radius = (float)get_cache('search_radius') ?? (float)5;
+        $search_radius = (float)(get_cache('search_radius') ?? 5);
+        if ($search_radius <= 0) {
+            $search_radius = 5;
+        }
         // Find drivers list based on pickup locations
         $find_drivers = $this->findNearestDriver(
             latitude: $pickupCoordinates[0],

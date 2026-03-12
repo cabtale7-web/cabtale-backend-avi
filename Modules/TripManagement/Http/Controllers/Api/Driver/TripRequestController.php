@@ -700,7 +700,10 @@ class TripRequestController extends Controller
 
             return response()->json(responseFormatter(DEFAULT_200));
         }
-        $search_radius = (double)get_cache('search_radius') ?? 5;
+        $search_radius = (double)(get_cache('search_radius') ?? 5);
+        if ($search_radius <= 0) {
+            $search_radius = 5;
+        }
         $location = $this->lastLocation->getBy(column: 'user_id', value: $user->id);
         if (!$location) {
 
