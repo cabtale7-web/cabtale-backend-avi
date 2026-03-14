@@ -14,7 +14,7 @@ class FirebasePushNotification extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'value', 'status','created_at','updated_at'];
+    protected $fillable = ['name', 'title', 'value', 'status','created_at','updated_at'];
 
     /**
      * The attributes that should be cast to native types.

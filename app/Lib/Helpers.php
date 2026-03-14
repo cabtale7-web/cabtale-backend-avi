@@ -487,7 +487,7 @@ if (!function_exists('getNotification')) {
     {
         $notification = FirebasePushNotification::query()->firstWhere('name', $key);
         return [
-            'title' => $notification['name'] ?? ' ',
+            'title' => $notification['title'] ?? ucfirst(str_replace('_', ' ', $key)),
             'description' => $notification['value'] ?? ' '
         ];
     }

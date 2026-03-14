@@ -73,12 +73,15 @@
                                 <div class="col-lg-6">
                                     <div class="mb-30">
                                         <div class="d-flex justify-content-between gap-3 align-items-center mb-3">
-                                            <label
-                                                for="trip_req_message">{{translate($notification['name'])}}</label>
+                                            <label>{{translate($notification['name'])}}</label>
                                         </div>
+                                        <input type="text" name="notification[{{$notification->name}}][title]"
+                                               class="form-control mb-2"
+                                               placeholder="{{translate('notification_title')}}"
+                                               value="{{$notification?->title}}">
                                         <textarea name="notification[{{$notification->name}}][value]"
-                                                  id="trip_req_message" rows="4" class="form-control"
-                                                  placeholder="Type Here ...">{{$notification?->value}}</textarea>
+                                                  rows="4" class="form-control"
+                                                  placeholder="{{translate('notification_description')}}">{{$notification?->value}}</textarea>
                                     </div>
                                 </div>
                             @empty
