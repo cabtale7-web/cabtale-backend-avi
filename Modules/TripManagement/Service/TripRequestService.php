@@ -725,6 +725,7 @@ class TripRequestService extends BaseService implements TripRequestServiceInterf
             $tripData['type'] = $attributes['type'];
             $tripData['entrance'] = $attributes['entrance'] ?? null;
             $tripData['encoded_polyline'] = $attributes['encoded_polyline'] ?? null;
+            $tripData['scheduled_at'] = $attributes['scheduled_at'] ?? null;
             $trip = $this->tripRequestRepository->create($tripData);
 
             $trip->tripStatus()->create([
@@ -825,6 +826,14 @@ class TripRequestService extends BaseService implements TripRequestServiceInterf
     public function makeRideRequest($request, $pickupCoordinates): mixed
     {
         $save_trip = $this->storeTrip(attributes: $request->request->all());
+
+        // If scheduled, dispatch job to fire at scheduled time — skip immediate driver search
+        if (!empty($request->scheduled_at)) {
+            $scheduledAt = \Carbon\Carbon::parse($request->scheduled_at);
+            \App\Jobs\ProcessScheduledTripJob::dispatch($save_trip->id)
+                ->delay($scheduledAt);
+            return new TripRequestResource($save_trip);
+        }
 
         $search_radius = (float)(get_cache('search_radius') ?? 5);
         if ($search_radius <= 0) {

@@ -35,7 +35,8 @@ class RideRequestCreate extends FormRequest
             'receiver_address' => 'required_if:type,==,parcel',
             'parcel_category_id' => 'required_if:type,==,parcel',
             'weight' => 'required_if:type,==,parcel',
-            'payer' => 'required_if:type,==,parcel'
+            'payer' => 'required_if:type,==,parcel',
+            'scheduled_at' => 'sometimes|nullable|date|after:' . now()->addHours(2)->toDateTimeString(),
         ];
     }
 
