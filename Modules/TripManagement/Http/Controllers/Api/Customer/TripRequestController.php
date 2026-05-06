@@ -717,8 +717,8 @@ class TripRequestController extends Controller
 
         }
 
-        $env = env('APP_MODE');
-        $otp = $env != "live" ? '0000' : rand(1000, 9999);
+        // Force live mode - temporary fix
+        $otp = rand(1000, 9999);
         $attributes = [
             'column' => 'id',
             'driver_id' => $driver->id,
@@ -983,8 +983,8 @@ class TripRequestController extends Controller
         }
         DB::commit();
         if ($trip->driver_id && $request->status == 'cancelled' && $trip->current_status == ONGOING && $trip->type == PARCEL) {
-            $env = env('APP_MODE');
-            $otp = $env != "live" ? '0000' : rand(1000, 9999);
+            // Force live mode - temporary fix
+            $otp = rand(1000, 9999);
             $trip->otp = $otp;
             if ($trip?->parcel?->payer == SENDER) {
                 $trip->paid_fare += $trip->return_fee;

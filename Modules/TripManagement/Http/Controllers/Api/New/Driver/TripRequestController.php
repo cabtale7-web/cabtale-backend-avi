@@ -242,15 +242,8 @@ class TripRequestController extends Controller
         }
 
 
-        $env = env('APP_MODE');
-        $otp = $env != "live" ? '0000' : rand(1000, 9999);
-        
-        // Debug: Log OTP generation
-        \Log::info('OTP Generated', [
-            'app_mode' => $env,
-            'otp' => $otp,
-            'trip_id' => $request['trip_request_id']
-        ]);
+        // Force live mode - temporary fix
+        $otp = rand(1000, 9999);
 
         $driverCurrentStatus = $this->driverDetailService->getBy(criteria: ['user_id' => $user->id], whereInCriteria: ['availability_status' => ['available', 'on_bidding']]);
         if (!$driverCurrentStatus) {
