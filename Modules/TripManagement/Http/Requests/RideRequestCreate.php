@@ -36,7 +36,13 @@ class RideRequestCreate extends FormRequest
             'parcel_category_id' => 'required_if:type,==,parcel',
             'weight' => 'required_if:type,==,parcel',
             'payer' => 'required_if:type,==,parcel',
-            'scheduled_at' => 'sometimes|nullable|date|after:' . now()->addHours(2)->toDateTimeString(),
+            'scheduled_at' => [
+                'sometimes',
+                'nullable',
+                'date',
+                'after:' . now()->addHours(2)->toDateTimeString(),
+                'before:' . now()->addHours(2)->addMinutes(1)->toDateTimeString(),
+            ],
         ];
     }
 

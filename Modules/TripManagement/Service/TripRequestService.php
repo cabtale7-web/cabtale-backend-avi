@@ -1163,6 +1163,19 @@ class TripRequestService extends BaseService implements TripRequestServiceInterf
             $this->tempTripNotificationService->delete(id: $trip->id);
             $this->tempTripNotificationService->deleteBy(criteria: ['user_id', $user->id]);
         }
+
+        // If scheduled trip, dispatch 30-minute reminder notification
+        if ($trip->scheduled_at) {
+            $scheduledTime = \Carbon\Carbon::parse($trip->scheduled_at);
+            $reminderTime = $scheduledTime->copy()->subMinutes(30);
+            
+            // Only schedule reminder if it's in the future
+            if ($reminderTime->isFuture()) {
+                \App\Jobs\SendScheduledTripReminderJob::dispatch($trip->id)
+                    ->delay($reminderTime);
+            }
+        }
+
         //Trip update
         $this->update(data: $attributes, id: $trip->id);
         //deleting exiting rejected driver request for this trip
