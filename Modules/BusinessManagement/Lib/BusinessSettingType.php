@@ -35,6 +35,7 @@ const TRIP_FARE_SETTINGS = "trip_fare_settings";
 
 const RECAPTCHA = "recaptcha";
 const GOOGLE_MAP_API = "google_map_api";
+const FIREBASE_PHONE_AUTH = "firebase_phone_auth";
 
 const SYSTEM_LANGUAGE = "system_language";
 const LANGUAGE_SETTINGS = "language_settings";

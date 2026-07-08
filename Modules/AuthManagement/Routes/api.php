@@ -13,6 +13,7 @@ Route::controller(\Modules\AuthManagement\Http\Controllers\Api\New\AuthControlle
             // reset or forget password
             Route::post('forget-password', 'forgetPassword');
             Route::post('reset-password', 'resetPassword');
+            Route::post('firebase-password-reset', 'firebasePasswordReset');
             Route::post('otp-verification', 'otpVerification');
             //send otp for otp login or reset
             Route::post('send-otp', 'sendOtp');
@@ -30,6 +31,7 @@ Route::controller(\Modules\AuthManagement\Http\Controllers\Api\New\AuthControlle
             Route::post('send-otp', 'sendOtp');
             Route::post('forget-password', 'forgetPassword');
             Route::post('reset-password', 'resetPassword');
+            Route::post('firebase-password-reset', 'firebasePasswordReset');
             Route::post('otp-verification', 'otpVerification');
         });
     });

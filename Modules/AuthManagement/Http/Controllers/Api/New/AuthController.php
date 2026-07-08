@@ -527,6 +527,43 @@ class AuthController extends Controller
 
     }
 
+    // Resets password after Firebase Phone Auth verifies the user's phone number.
+    public function firebasePasswordReset(Request $request): JsonResponse
+    {
+        $validator = Validator::make($request->all(), [
+            'phone_or_email' => 'required|min:8|max:20',
+            'firebase_id_token' => 'required|string|max:5000',
+            'password' => 'required|min:8',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(responseFormatter(constant: DEFAULT_400, errors: errorProcessor($validator)), 403);
+        }
+
+        $user = $this->authService->checkClientRoute($request);
+        if (!$user) {
+            return response()->json(responseFormatter(constant: USER_404), 403);
+        }
+
+        $firebaseClaims = $this->authService->verifyFirebasePhoneToken($request->firebase_id_token);
+        if (!$firebaseClaims) {
+            return response()->json(responseFormatter(DEFAULT_401), 403);
+        }
+
+        if (!$this->authService->phoneMatchesFirebaseToken($firebaseClaims['phone_number'], $user->phone)) {
+            return response()->json(responseFormatter(OTP_MISMATCH_404), 403);
+        }
+
+        $attributes = [
+            'password' => bcrypt($request['password']),
+            'phone_verified_at' => $user->phone_verified_at ?: now(),
+        ];
+
+        $this->authService->updateLoginUser(id: $user->id, data: $attributes);
+
+        return response()->json(responseFormatter(DEFAULT_PASSWORD_RESET_200), 200);
+    }
+
 
     public function forgetPassword(Request $request)
     {

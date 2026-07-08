@@ -14,6 +14,7 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Routing\Controller;
 use Illuminate\View\View;
 use Modules\BusinessManagement\Http\Requests\EmailSettingSetupStoreOrUpdateRequest;
+use Modules\BusinessManagement\Http\Requests\FirebasePhoneAuthSetupStoreOrUpdateRequest;
 use Modules\BusinessManagement\Http\Requests\GoogleMapSetupStoreOrUpdateRequest;
 use Modules\BusinessManagement\Http\Requests\RecaptchaSetupStoreOrUpdateRequest;
 use Modules\BusinessManagement\Service\Interface\BusinessSettingServiceInterface;
@@ -91,6 +92,29 @@ class ThirdPartyController extends BaseController
     {
         $this->authorize('business_edit');
         $this->businessSettingService->storeGoogleMapApi($request->validated());
+        Toastr::success(CONFIGURATION_UPDATE_200['message']);
+        return back();
+    }
+
+    // Shows Firebase Phone Auth setup form for password reset OTP verification.
+    public function firebasePhoneAuth()
+    {
+        $this->authorize('business_view');
+        $attributes = [
+            'settings_type' => FIREBASE_PHONE_AUTH,
+            'key_name' => FIREBASE_PHONE_AUTH
+        ];
+        $setting = $this->businessSettingService
+            ->findOneBy(criteria: $attributes)?->value;
+
+        return view('businessmanagement::admin.configuration.firebase-phone-auth', compact('setting'));
+    }
+
+    // Updates Firebase Phone Auth setup used by password reset token verification.
+    public function updateFirebasePhoneAuth(FirebasePhoneAuthSetupStoreOrUpdateRequest $request)
+    {
+        $this->authorize('business_edit');
+        $this->businessSettingService->storeFirebasePhoneAuth($request->validated());
         Toastr::success(CONFIGURATION_UPDATE_200['message']);
         return back();
     }

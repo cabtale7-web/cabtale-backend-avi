@@ -715,6 +715,26 @@ class BusinessSettingService extends BaseService implements BusinessSettingServi
         }
     }
 
+    // Stores Firebase Phone Auth configuration for password reset verification.
+    public function storeFirebasePhoneAuth(array $data)
+    {
+        $data['status'] = array_key_exists('status', $data) ? 1 : 0;
+        $data['auth_cert_url'] = ($data['auth_cert_url'] ?? null) ?: config('services.firebase.auth_cert_url');
+
+        $firebasePhoneAuth = $this->businessSettingRepository->findOneBy(criteria: [
+            'key_name' => FIREBASE_PHONE_AUTH,
+            'settings_type' => FIREBASE_PHONE_AUTH
+        ]);
+
+        if ($firebasePhoneAuth) {
+            $this->businessSettingRepository->update(id: $firebasePhoneAuth->id, data: ['key_name' => FIREBASE_PHONE_AUTH, 'settings_type' => FIREBASE_PHONE_AUTH, 'value' => $data]);
+        } else {
+            $this->businessSettingRepository->create(data: ['key_name' => FIREBASE_PHONE_AUTH, 'settings_type' => FIREBASE_PHONE_AUTH, 'value' => $data]);
+        }
+
+        Cache::forget('firebase_phone_auth_certs');
+    }
+
     public function storeRecaptha(array $data)
     {
         $recaptcha = $this->businessSettingRepository->findOneBy(criteria: [

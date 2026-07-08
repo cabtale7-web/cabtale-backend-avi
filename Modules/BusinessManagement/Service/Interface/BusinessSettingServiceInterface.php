@@ -34,5 +34,6 @@ interface BusinessSettingServiceInterface extends BaseServiceInterface
 
     public function storeEmailConfig(array $data);
     public function storeGoogleMapApi(array $data);
+    public function storeFirebasePhoneAuth(array $data);
     public function storeRecaptha(array $data);
 }

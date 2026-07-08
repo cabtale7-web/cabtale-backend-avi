@@ -34,4 +34,9 @@ return [
         'key' => env('RESEND_API_KEY'),
     ],
 
+    'firebase' => [
+        'project_id' => env('FIREBASE_PROJECT_ID'),
+        'auth_cert_url' => env('FIREBASE_AUTH_CERT_URL', 'https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com'),
+    ],
+
 ];

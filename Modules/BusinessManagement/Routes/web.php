@@ -127,6 +127,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], f
                         Route::get('/', 'map')->name('index');
                         Route::post('update', 'updateMap')->name('update');
                     });
+                    Route::group(['prefix' => 'firebase-phone-auth', 'as' => 'firebase-phone-auth.'], function () {
+                        Route::get('/', 'firebasePhoneAuth')->name('index');
+                        Route::post('update', 'updateFirebasePhoneAuth')->name('update');
+                    });
                 });
             });
         });

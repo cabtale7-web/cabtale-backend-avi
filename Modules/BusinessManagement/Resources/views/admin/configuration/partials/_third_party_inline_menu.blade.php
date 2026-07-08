@@ -21,6 +21,11 @@
             ">{{translate('google_map_API')}}</a>
         </li>
         <li class="nav-item">
+            <a href="{{route('admin.business.configuration.third-party.firebase-phone-auth.index')}}" class="text-capitalize nav-link
+                {{Request::is('admin/business/configuration/third-party/firebase-phone-auth') ? 'active' : ''}}
+            ">{{translate('firebase_phone_auth')}}</a>
+        </li>
+        <li class="nav-item">
             <a href="{{route('admin.business.configuration.third-party.recaptcha.index')}}" class="text-capitalize nav-link
                 {{Request::is('admin/business/configuration/third-party/recaptcha') ? 'active' : ''}}
             ">{{translate('reCaptcha')}}</a>

@@ -12,6 +12,10 @@ interface AuthServiceInterface extends BaseServiceInterface
 
     public function sendOtpToClient($user);
 
+    public function verifyFirebasePhoneToken(string $idToken): ?array;
+
+    public function phoneMatchesFirebaseToken(string $firebasePhone, string $storedPhone): bool;
+
     public function updateLoginUser(string|int $id, array $data): ?Model;
 
 }
