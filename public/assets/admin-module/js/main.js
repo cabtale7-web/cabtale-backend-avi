@@ -442,9 +442,14 @@ We may release future updates, so it will overwrite this file. it's better and s
     const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
     );
-    const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-    );
+    const tooltipList = [...tooltipTriggerList]
+        .filter((tooltipTriggerEl) => {
+            const title = tooltipTriggerEl.getAttribute("title");
+            const bsTitle = tooltipTriggerEl.getAttribute("data-bs-title");
+
+            return Boolean((title && title.trim()) || (bsTitle && bsTitle.trim()));
+        })
+        .map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 
     /*============================================
   14: Circular Progress
